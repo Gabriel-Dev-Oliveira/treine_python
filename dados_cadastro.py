@@ -1,0 +1,11 @@
+print("Bem-vindo ao cadastro de usuários!")
+nome = input("Digite o seu nome completo: ")
+idade = input("Digite a sua idade: ")
+email = input("Digite o seu e-mail: ")
+telefone = input("Digite o seu telefone: ")
+
+print("\nDados do cadastro:")
+print("Nome completo:", nome)
+print("Idade:", idade)
+print("E-mail:", email)
+print("Telefone:", telefone)
