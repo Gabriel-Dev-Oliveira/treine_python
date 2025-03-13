@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <h1>Biblioteca</h1>
+    <a href="/redirecionar">Adicionar livro</a>
+    <ul>
+        {% for livro in livros %}
+            <li>{{ livro[1] }} - {{ livro[2] }} - {{ livro[3] }}
+            {% if livro[4] %}
+             - Disponível
+            {% else %}
+             - Emprestado
+            {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
